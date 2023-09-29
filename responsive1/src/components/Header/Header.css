@@ -1,0 +1,48 @@
+* {
+  text-transform: capitalize;
+}
+
+.header {
+  height: 100vh;
+  background: rgb(21, 20, 20);
+}
+
+.logo {
+  background: url(./logo.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+/* h-container */
+
+.h-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.ul__list {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  /* border: 3px solid blue; */
+}
+
+.ul__list li {
+  list-style: none;
+}
+
+.ul__list a {
+  color: #fff;
+  text-decoration: none;
+}
+
+button {
+  height: 3rem;
+  padding: 0.6rem 2rem;
+  border-radius: 0.4rem;
+  color: white;
+  background: blue;
+  cursor: pointer;
+}

@@ -1,0 +1,22 @@
+h1 {
+  line-height: 3rem;
+  margin-inline: 8rem;
+}
+
+.home__img {
+  display: block;
+  height: 45rem;
+  background: url(../../../images/lady-in-yoga.jpg) no-repeat;
+  margin-inline: 7rem;
+}
+
+/* media__query */
+
+@media screen and (min-width: 54rem) {
+  .Home-parent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

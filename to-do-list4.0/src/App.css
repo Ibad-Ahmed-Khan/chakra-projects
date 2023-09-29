@@ -1,0 +1,23 @@
+.mood-tracker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  font-weight: bold;
+  list-style: none;
+  color: white;
+  font-size: 2rem;
+  background: black;
+}
+
+select {
+  height: 2rem;
+  cursor: pointer;
+}

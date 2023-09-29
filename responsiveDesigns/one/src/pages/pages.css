@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background: white;
+  margin-top: 4rem;
+}
+
+.title {
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-weight: 200;
+  color: #99fa99;
+  font-size: 1.7rem;
+}

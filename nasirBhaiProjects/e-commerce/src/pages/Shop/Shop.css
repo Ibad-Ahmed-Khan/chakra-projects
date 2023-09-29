@@ -1,0 +1,41 @@
+.products {
+  /* border: 3px solid green; */
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.shoptitle {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.products > * {
+  padding: 3rem;
+  /* border: 3px solid red; */
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.btn {
+  width: 7rem;
+  height: 2rem;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: capitalize;
+  border-radius: 1rem;
+  transition: background 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  color: white;
+  background: black;
+}
+
+.btn:active {
+  background: gray;
+  border: none;
+  outline: none;
+}

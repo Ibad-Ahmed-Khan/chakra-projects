@@ -1,0 +1,32 @@
+* {
+  text-transform: capitalize;
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid red; */
+  height: 100vh;
+  gap: 2rem;
+}
+
+form {
+  margin-top: 5rem;
+}
+
+button {
+  font-weight: bold;
+  cursor: pointer;
+  width: 7rem;
+  height: 2rem;
+}
+
+.checkbox:checked ~ label {
+  color: gray;
+  text-decoration: line-through;
+}
+
+li {
+  list-style: none;
+}

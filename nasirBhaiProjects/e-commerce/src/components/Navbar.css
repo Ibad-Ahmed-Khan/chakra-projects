@@ -1,0 +1,14 @@
+.parent {
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.877);
+  display: flex;
+  justify-content: end;
+  gap: 3rem;
+}
+
+.parent a {
+  color: white;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  text-decoration: none;
+}

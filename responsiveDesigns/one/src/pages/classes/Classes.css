@@ -1,0 +1,32 @@
+.classes__left {
+  display: flex;
+  text-transform: capitalize;
+  justify-content: space-evenly;
+  /* border: 2px solid red; */
+}
+
+.classes__btn {
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: grey;
+  background: transparent;
+  border: none;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.classes__p {
+  text-align: left;
+  line-height: 2rem;
+  font-size: 1rem;
+  letter-spacing: 1.4px;
+}
+
+@media screen and (min-width: 54rem) {
+  .Classes-parent > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

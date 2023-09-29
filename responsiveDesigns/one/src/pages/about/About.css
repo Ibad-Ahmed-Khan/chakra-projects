@@ -1,0 +1,51 @@
+.About-parent > * {
+  margin-top: 2rem;
+  margin-inline: 2rem;
+}
+
+.about__left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about__left > * {
+  border: 1px solid green;
+}
+
+.pair > *:nth-child(2) {
+  margin-top: 1rem;
+  margin-inline: 1rem;
+}
+
+.pair > *:nth-child(1) {
+  font-size: 1.3rem;
+  text-align: left;
+  color: white;
+  cursor: pointer;
+  background: #077054;
+  padding: 1rem;
+}
+
+.pair > *:nth-child(2) {
+  font-size: 0.94rem;
+  line-height: 1.7rem;
+  text-align: left;
+  color: grey;
+  transition: all 0.3s ease-in-out;
+}
+
+.about__img {
+  display: block;
+  height: 45rem;
+  background: url(../../../images/lady-in-yoga.jpg) no-repeat;
+  margin-inline: 5rem;
+}
+
+.margin__left {
+  margin-left: 3rem;
+}
+
+b {
+  margin-left: 3rem;
+}

@@ -1,0 +1,30 @@
+* {
+  text-transform: capitalize;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.parent > * {
+  border: 2px solid red;
+}
+
+.products__parent {
+  gap: 4rem;
+}
+
+li {
+  margin-top: 2rem;
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.items {
+  width: 2rem;
+  height: 1rem;
+}

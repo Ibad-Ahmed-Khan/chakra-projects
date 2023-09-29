@@ -1,0 +1,36 @@
+.Collapse {
+  display: flex;
+  gap: 3rem;
+  margin-inline: 5rem;
+  margin-top: 10rem;
+}
+
+.card {
+  text-transform: capitalize;
+  color: black;
+  padding-inline: 3rem;
+  line-height: 2rem;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  font-weight: bolder;
+  background: transparent;
+  outline: none;
+  color: black;
+  border: 1px solid;
+  transition: all 0.4s ease-in-out;
+}
+
+p {
+  transition: all 0.4s ease-in-out;
+  border: 2px solid;
+}

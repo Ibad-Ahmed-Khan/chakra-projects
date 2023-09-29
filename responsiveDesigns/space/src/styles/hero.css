@@ -1,0 +1,182 @@
+.hero {
+  background: url("https://cdn.pixabay.com/photo/2012/08/25/22/22/saturn-54999_1280.jpg")
+    no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.hero-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  /* border: 2px solid red; */
+}
+
+.logo {
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  /* border: 2px solid red; */
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  place-items: center;
+  gap: 2rem;
+}
+
+.links {
+  display: flex;
+  gap: 3rem;
+}
+
+.links a {
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  padding: 0.5rem;
+  border: 1px solid;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.hero-btn {
+  border: 1px solid white;
+  font-size: 1rem;
+  padding: 1rem;
+  height: 100%;
+  cursor: pointer;
+  font-weight: bold;
+  background: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+/* ... hero-header hovers ... */
+
+.icon:hover .social-icon {
+  fill: black;
+}
+
+.icon:hover {
+  background: white;
+}
+
+.hero-btn:hover {
+  color: black;
+  background: white;
+}
+
+/* hero-main */
+
+.hero-main {
+  /* border: 5px solid green; */
+  display: flex;
+}
+
+.hero-main > * {
+  width: 50%;
+  /* border: 5px solid red; */
+}
+
+.hero-main-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-main-left h1 {
+  font-size: 3rem;
+}
+
+.hero-main-left > * {
+  padding: 1rem 5rem;
+}
+
+.hero-main-right {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.btn {
+  transition: all 0.2s ease-in-out;
+}
+
+.btn > * {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.rocekt {
+  cursor: pointer;
+  transform: rotate(-43deg);
+  fill: #c0c0c0;
+}
+
+.rocekt {
+  animation: rocketAnimation 2s infinite;
+}
+
+@keyframes rocketAnimation {
+  0% {
+    transform: translateY(0) rotate(-43deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(-43deg);
+  }
+  100% {
+    transform: translateY(0) rotate(-43deg);
+  }
+}
+
+/* media-qurey */
+
+@media screen and (max-width: 1000px) {
+  .hero-header {
+    flex-direction: column;
+    background: red;
+  }
+
+  .nav-list {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .nav-list > *:not(:nth-child(2)) {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .hero-main {
+    align-items: center;
+    flex-direction: column;
+    /* z-index: 100; */
+  }
+
+  .hero-main > * {
+    width: 100%;
+    /* border: 5px solid red; */
+  }
+}

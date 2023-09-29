@@ -1,0 +1,153 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #282c34;
+  height: 7rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #61dafb;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+a:hover {
+  color: aqua;
+}
+
+a::after {
+  content: "";
+  display: block;
+  background: aqua;
+  height: 3px;
+  transform: scale(0);
+  transition: all 0.4s ease-in-out;
+  transform-origin: left;
+  margin-top: 3px;
+}
+
+a:hover::after {
+  content: "";
+  display: block;
+  background: white;
+  height: 3px;
+  transform: scale(1);
+}
+
+/* sidebar__start */
+
+.sidebar__parent {
+  position: relative;
+  top: 0;
+  width: 30%;
+  height: 40rem;
+}
+
+.hamburger {
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 2rem;
+  left: 4rem;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.hamburger > span {
+  display: block;
+  background: #61dafb;
+  height: 3px;
+}
+
+/* SidebarContent */
+
+.sidebarcontent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  /* background: #282c34; */
+}
+
+.sidebarcontent > * {
+  color: #fff;
+  cursor: pointer;
+}
+
+/*  */
+
+.parent {
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  gap: 3rem;
+  /* border: 3px solid red; */
+}

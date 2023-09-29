@@ -1,0 +1,25 @@
+.hamburger-parent {
+  position: absolute;
+  top: 1rem;
+  right: 3.6rem;
+  width: 2.3rem;
+  height: 2.3rem;
+  border: 2px solid #99fa99;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  z-index: 11111;
+}
+
+.hamburger-parent span {
+  width: 1.4rem;
+  margin-left: 0.5rem;
+  margin-top: 0.3rem;
+  display: block;
+  height: 5px;
+  background: #99fa99;
+  position: relative;
+  top: 0%;
+  left: 0%;
+  transform: translate(-0%, 0%);
+  transition: all 0.4s ease-in-out;
+}
