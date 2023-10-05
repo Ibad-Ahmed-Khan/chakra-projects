@@ -1,0 +1,111 @@
+import "./App.css";
+import {
+  Box,
+  Button,
+  Flex,
+  FormControl,
+  Input,
+  List,
+  ListItem,
+  Text,
+  useToast
+} from "@chakra-ui/react";
+import { useState } from "react";
+import { FaTrash, FaPlus } from "react-icons/fa";
+
+function App() {
+  const [todo, setTodo] = useState("");
+  const [todoList, setTodoList] = useState([]);
+  const toast = useToast();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (todo.trim() !== "") {
+      setTodoList([...todoList, todo]);
+      setTodo("");
+      toast({
+        title: "Todo added.",
+        description: `${todo} has been added to your list.`,
+        status: "success",
+        duration: 3000,
+        isClosable: true,
+      });
+    }
+  };
+
+  const input = (e) => {
+    setTodo(e.target.value);
+  };
+
+  const del = (index) => {
+    const removedItem = todoList[index];
+    setTodoList(todoList.filter((_, ind) => index !== ind));
+    toast({
+      title: "Todo deleted.",
+      description: `${removedItem} has been removed from your list.`,
+      status: "error",
+      duration: 3000,
+      isClosable: true,
+    });
+  };
+
+  return (
+    <Flex
+      flexDirection="column"
+      align="center"
+      as="div"
+      p="10"
+      gap="5"
+      bg="red.400"
+      h="100vh"
+    >
+      <Text fontSize="3xl">Your Todo</Text>
+      <form onSubmit={handleSubmit}>
+        <Flex>
+          <FormControl display="flex" flexDirection="row">
+            <Input onChange={input} value={todo} borderRadius="none" placeholder="Add a new todo"></Input>
+            <Button type="submit" borderRadius="none">
+              <Box as={FaPlus} />
+            </Button>
+          </FormControl>
+        </Flex>
+      </form>
+      {todoList.length ? (
+        <List w="xs" mt="6">
+          {todoList.map((item, index) => {
+            return (
+              <ListItem
+                key={index}
+                border="1px solid white"
+                display="flex"
+                alignItems="center"
+                h="10"
+                mt="4"
+                padding="4"
+                borderRadius="md"
+                bg="white"
+                color="black"
+              >
+                <Button
+                  onClick={() => del(index)}
+                  _hover={{ color: "red" }}
+                  mr="3"
+                  borderRadius="none"
+                >
+                  <Box as={FaTrash} />
+                </Button>
+                {item}
+              </ListItem>
+            );
+          })}
+        </List>
+      ) : (
+        <Text mt="6" color="white">You have no todos. Add some!</Text>
+      )}
+    </Flex>
+  );
+}
+
+export default App;
+
+framer-motion important
